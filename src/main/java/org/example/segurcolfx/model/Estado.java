@@ -1,4 +1,5 @@
 package org.example.segurcolfx.model;
 
 public enum Estado {
+    ACTIVO, SUSPENDIDO, FINALIZADO
 }

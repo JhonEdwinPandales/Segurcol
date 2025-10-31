@@ -1,6 +1,5 @@
 package org.example.segurcolfx.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
-public record RegistroNovedad(String id, LocalDate fechaHora, String tipoNovedad, String descripcion, Empleado empleado, Servicio servicio, IAuditable auditable) {
-}
+public record RegistroNovedad(LocalDateTime fechaHora, String descripcion, String autor) { }

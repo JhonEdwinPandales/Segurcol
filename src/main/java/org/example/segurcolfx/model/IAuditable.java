@@ -1,8 +1,9 @@
 package org.example.segurcolfx.model;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public interface IAuditable {
-    String registroNovedad (RegistroNovedad novedad);
-    ArrayList<RegistroNovedad> getNovedades();
+    void registrarNovedad(RegistroNovedad novedad);
+    ArrayList<RegistroNovedad> getNovedades(LocalDateTime desde, LocalDateTime hasta);
 }
