@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.segurcolfx.viewController.ReportesController"
+      spacing="14" alignment="TOP_CENTER" padding="20">
+
+    <Label text="Reportes" style="-fx-font-size: 26px; -fx-font-weight: bold;" />
+
+    <Button text="Reporte de Dotación por Empleado" fx:id="btnDotacion" />
+    <Button text="Gasto Total de Nómina" fx:id="btnNomina" />
+    <Button text="Gasto Total en Recursos" fx:id="btnRecursos" />
+
+    <Label text="Resultado:" style="-fx-font-size: 18px;" />
+    <TextArea fx:id="txtResultado" prefHeight="250" />
+
+    <Button text="Volver" fx:id="btnVolver" />
+</VBox>

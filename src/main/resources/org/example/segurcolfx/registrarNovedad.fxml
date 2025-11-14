@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.segurcolfx.viewController.RegistrarNovedadController"
+      spacing="12" alignment="TOP_CENTER" padding="20">
+
+    <Label text="Registrar Novedad" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <VBox spacing="6" alignment="CENTER_LEFT">
+        <Label text="Descripción:" />
+        <TextField fx:id="txtDescripcion"/>
+
+        <Label text="Fecha y hora:" />
+        <TextField fx:id="txtFechaHora" promptText="YYYY-MM-DD HH:MM" />
+    </VBox>
+
+    <Button text="Registrar" fx:id="btnRegistrar" />
+    <Button text="Volver" fx:id="btnVolver" />
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.segurcolfx.viewController.ListaEquiposController"
+      spacing="12" alignment="TOP_CENTER" padding="20">
+
+    <Label text="Lista de Equipos" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="tablaEquipos" prefHeight="400">
+        <columns>
+            <TableColumn text="Código" fx:id="colCodigo" />
+            <TableColumn text="Tipo" fx:id="colTipo" />
+            <TableColumn text="Estado" fx:id="colEstado" />
+            <TableColumn text="Valor Reposición" fx:id="colValor" />
+        </columns>
+    </TableView>
+
+    <Button text="Volver" fx:id="btnVolver" />
+</VBox>

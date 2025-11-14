@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.segurcolfx.viewController.AgendaController"
+      spacing="12" alignment="TOP_CENTER" padding="20">
+
+    <Label text="Agenda" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Desde:" />
+            <DatePicker fx:id="dpDesde"/>
+        </VBox>
+
+        <VBox spacing="5">
+            <Label text="Hasta:" />
+            <DatePicker fx:id="dpHasta"/>
+        </VBox>
+    </HBox>
+
+    <Button text="Consultar Agenda" fx:id="btnConsultar" />
+
+    <TableView fx:id="tablaAgenda" prefHeight="350">
+        <columns>
+            <TableColumn text="Fecha" fx:id="colFecha"/>
+            <TableColumn text="Descripción" fx:id="colDescripcion"/>
+        </columns>
+    </TableView>
+
+    <Button text="Volver" fx:id="btnVolver" />
+</VBox>

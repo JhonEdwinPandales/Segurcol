@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="12" alignment="TOP_CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.segurcolfx.controller.RegistrarCustodiaController"
+      style="-fx-padding: 20;">
+
+    <Label text="Registrar Servicio de Custodia Fija" style="-fx-font-size: 22;" />
+
+    <TextField fx:id="txtCodigo" promptText="Código del Servicio" />
+    <TextField fx:id="txtCliente" promptText="Cliente" />
+
+    <TextField fx:id="txtUbicacion" promptText="Ubicación" />
+
+    <TextField fx:id="txtTarifa" promptText="Tarifa Mensual" />
+
+    <Label text="Datos del Puesto" style="-fx-font-size: 18; -fx-padding: 10 0 0 0;" />
+
+    <TextField fx:id="txtNumeroPuesto" promptText="Número del Puesto" />
+    <ComboBox fx:id="cbTipoArma" promptText="Tipo de Arma" />
+
+    <Button text="Registrar Servicio" onAction="#registrarCustodia" />
+    <Button text="Volver" onAction="#volverDashboard" />
+
+</VBox>

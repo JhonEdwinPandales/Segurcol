@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.segurcolfx.viewController.DashboardController">
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Label text="SEGURCOL - Sistema de Gestión" style="-fx-font-size: 24px;" />
+
+            <Button text="Registrar Vigilante" fx:id="btnRegistrarVigilante" prefWidth="250"/>
+            <Button text="Registrar Supervisor" fx:id="btnRegistrarSupervisor" prefWidth="250"/>
+            <Button text="Registrar Operador de Monitoreo" fx:id="btnRegistrarOperador" prefWidth="250"/>
+
+            <Separator prefWidth="300"/>
+
+            <Button text="Registrar Servicio" fx:id="btnRegistrarServicio" prefWidth="250"/>
+            <Button text="Registrar Equipo" fx:id="btnRegistrarEquipo" prefWidth="250"/>
+
+            <Separator prefWidth="300"/>
+
+            <Button text="Ver Empleados" fx:id="btnListaEmpleados" prefWidth="250"/>
+            <Button text="Ver Servicios" fx:id="btnListaServicios" prefWidth="250"/>
+            <Button text="Ver Equipos" fx:id="btnListaEquipos" prefWidth="250"/>
+        </VBox>
+    </center>
+
+</BorderPane>

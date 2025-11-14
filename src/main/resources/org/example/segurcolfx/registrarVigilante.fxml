@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="12" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.segurcolfx.controller.RegistrarVigilanteController"
+      alignment="TOP_CENTER" style="-fx-padding: 20;">
+
+    <Label text="Registrar Vigilante" style="-fx-font-size: 22;" />
+
+    <TextField fx:id="txtNombre" promptText="Nombre" />
+    <TextField fx:id="txtDocumento" promptText="Documento" />
+
+    <ComboBox fx:id="cbTurno" promptText="Turno" />
+    <TextField fx:id="txtSalario" promptText="Salario Base" />
+
+    <TextField fx:id="txtPuesto" promptText="Número de Puesto" />
+
+    <ComboBox fx:id="cbArma" promptText="Tipo de Arma" />
+
+    <Button text="Registrar" onAction="#registrarVigilante" />
+    <Button text="Volver" onAction="#volverDashboard" />
+
+</VBox>

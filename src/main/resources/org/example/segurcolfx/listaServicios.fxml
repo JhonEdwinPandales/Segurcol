@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.segurcolfx.controller.ListaServiciosController">
+
+    <top>
+        <Label text="Lista de Servicios" style="-fx-font-size: 22px; -fx-padding: 15;" />
+    </top>
+
+    <center>
+        <TableView fx:id="tablaServicios">
+            <columns>
+                <TableColumn fx:id="colCodigo" text="Contrato" prefWidth="120"/>
+                <TableColumn fx:id="colCliente" text="Cliente" prefWidth="150"/>
+                <TableColumn fx:id="colTipo" text="Tipo" prefWidth="150"/>
+                <TableColumn fx:id="colTarifa" text="Tarifa Mensual" prefWidth="130"/>
+                <TableColumn fx:id="colEstado" text="Estado" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <Button text="Volver" onAction="#volverDashboard"
+                style="-fx-padding: 10; -fx-font-size: 14;" />
+    </bottom>
+
+</BorderPane>

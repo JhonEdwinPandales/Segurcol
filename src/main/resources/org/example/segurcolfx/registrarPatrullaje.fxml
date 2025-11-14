@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.segurcolfx.viewController.RegistrarServiciosController"
+      spacing="12" alignment="TOP_CENTER" padding="20">
+
+    <Label text="Registrar Patrullaje Móvil" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <VBox spacing="6" alignment="CENTER_LEFT">
+        <Label text="Código de contrato:" />
+        <TextField fx:id="txtCodigoContrato" />
+
+        <Label text="Cliente:" />
+        <TextField fx:id="txtCliente" />
+
+        <Label text="Tarifa mensual:" />
+        <TextField fx:id="txtTarifa" />
+
+        <Label text="Cantidad de rutas:" />
+        <TextField fx:id="txtRutas" />
+
+        <Label text="Kilómetros recorridos:" />
+        <TextField fx:id="txtKilometros" />
+    </VBox>
+
+    <Button text="Registrar Servicio" fx:id="btnRegistrar" />
+    <Button text="Volver" fx:id="btnVolver" />
+</VBox>
